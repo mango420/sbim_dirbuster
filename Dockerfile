@@ -6,7 +6,7 @@ COPY . /app
 
 RUN pip install flask
 
-EXPOSE 6969
+EXPOSE 3000
 
 ENV FLASK_APP=app.py
 
