@@ -13,7 +13,7 @@ def admin():
         password = request.form.get('password')
         
         if username == 'admin' and password == 'batman':
-            return redirect(url_for('index'))
+            return render_template('index.html')
         else:
             return render_template('admin_error.html')
 
